@@ -19,6 +19,71 @@
     .title {
       letter-spacing: 1px;
       font-weight: 200;
+      font-size: 2rem;
+    }
+  }
+}
+
+// Section: Colors
+#colors {
+  padding: 8rem 0;
+
+  > div {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .color {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    // max-width: 14rem;
+    max-height: 10.5rem;
+
+    .color-code {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+
+    span {
+      margin-right: 2rem;
+    }
+  }
+}
+
+// Section: Text
+#text {
+  padding: 2rem 0;
+
+  .grid {
+    grid-template-columns: 55% 45%;
+  }
+
+  .left {
+    h1 {
+      font-size: 12.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .text {
+      font-size: 3.25rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  .right {
+    padding-inline: 1rem;
+    overflow-wrap: break-word;
+    p {
+      font-size: 1.75rem;
     }
   }
 }

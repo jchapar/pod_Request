@@ -95,6 +95,18 @@
   color: var(--clr-blue-light);
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-light {
+  font-weight: 200;
+}
+
 .title {
   text-transform: uppercase;
+}
+
+.text-accent {
+  color: #bebebe;
 }
