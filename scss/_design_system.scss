@@ -1,0 +1,24 @@
+// Header
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/desktop/image-host.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 18%;
+  background-size: cover;
+  height: 20vh;
+
+  & > div {
+    height: 100%;
+  }
+
+  .logo {
+    max-width: 8.3rem;
+  }
+
+  .page-title {
+    .title {
+      letter-spacing: 1px;
+      font-weight: 200;
+    }
+  }
+}

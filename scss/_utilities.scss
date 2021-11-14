@@ -1,0 +1,100 @@
+/* ----------------- */
+/* Utility Classes */
+/* ----------------- */
+
+// Flex
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-start {
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-end {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+// Screen reader only. Only for assistive technologies
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+// Colors
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+.bg-white {
+  background-color: var(--clr-white);
+}
+.bg-blue-dark {
+  background-color: var(--clr-blue-dark);
+}
+.bg-blue-md {
+  background-color: var(--clr-blue-md);
+}
+.bg-blue-light {
+  background-color: var(--clr-blue-light);
+}
+
+.text-primary {
+  color: var(--clr-primary);
+}
+.text-dark {
+  color: var(--clr-dark);
+}
+.text-white {
+  color: var(--clr-white);
+}
+.text-blue-dark {
+  color: var(--clr-blue-dark);
+}
+.text-blue-md {
+  color: var(--clr-blue-md);
+}
+.text-blue-light {
+  color: var(--clr-blue-light);
+}
+
+.title {
+  text-transform: uppercase;
+}
