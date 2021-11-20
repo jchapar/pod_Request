@@ -1,3 +1,6 @@
+/*
+Design System
+*/
 // Header
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -36,7 +39,6 @@
   .color {
     padding: 1rem;
     border-radius: 0.5rem;
-    // max-width: 14rem;
     max-height: 10.5rem;
 
     .color-code {
@@ -84,6 +86,106 @@
     overflow-wrap: break-word;
     p {
       font-size: 1.75rem;
+    }
+  }
+}
+
+/*
+Main Styles
+*/
+body {
+  background-color: var(--clr-dark);
+
+  .bg-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        rgba(11, 18, 37, 0.8),
+        rgba(18, 23, 37, 0.8)
+      ),
+      url(../assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  // Logo
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    padding: 3rem 0;
+
+    .logo {
+      max-width: 8.4rem;
+    }
+  }
+
+  // Main Content
+  .main-content {
+    z-index: 10;
+    position: relative;
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 1.75rem;
+      .title {
+        font-size: 1.62rem;
+        color: #fff;
+      }
+    }
+
+    .page-text {
+      text-align: center;
+      margin-bottom: 1.75rem;
+
+      p {
+        letter-spacing: 1px;
+        line-height: 1.5;
+      }
+    }
+
+    .media-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.75rem;
+
+      img {
+        max-width: 3.5rem;
+      }
+    }
+
+    .email-container {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        font-size: 14px;
+        padding: 0.75rem 1.5rem;
+        border-radius: 2rem;
+        border: 0;
+        margin-bottom: 1rem;
+        font-family: "Chivo", sans-serif;
+      }
+
+      small {
+        margin-bottom: 0.5rem;
+        margin-left: 1.5rem;
+        color: #fb3e3e;
+        font-size: 0.8rem;
+        display: none;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 0.75rem 1rem;
+        border-radius: 2rem;
+        border: 0;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
