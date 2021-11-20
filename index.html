@@ -55,17 +55,25 @@
           />
         </div>
         <div class="email-container">
-          <input
-            type="email"
-            placeholder="Email Address"
-            class="bg-blue-dark"
-          />
-          <small class="error fw-bold">Oops! Please check your email</small>
-          <button type="submit" class="bg-primary fw-bold">
-            Request Access
-          </button>
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-blue-dark"
+              id="email"
+            />
+            <small class="fw-bold" id="error-message"
+              >Oops! Please check your email</small
+            >
+            <button type="submit" class="bg-primary fw-bold" id="submit-btn">
+              Request Access
+            </button>
+          </form>
         </div>
       </div>
     </div>
+
+    <!-- JS -->
+    <script src="dist/js/app.js"></script>
   </body>
 </html>
