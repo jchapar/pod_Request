@@ -17,59 +17,58 @@
   <body>
     <!-- BG -->
     <div class="bg-image-container"></div>
-    <div class="container">
-      <div class="logo-container">
+    <!-- Dots Img -->
+    <div class="dots-image-container">
+      <img src="dist/assets/desktop/bg-pattern-dots.svg" alt="Dots Image" />
+    </div>
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="dist/assets/desktop/logo.svg" alt="Website Logo" class="logo" />
+    </div>
+    <!-- Main content -->
+    <div class="main-content bg-dark">
+      <div class="page-title">
+        <h1 class="title fw-light">
+          <span class="text-primary">Publish your podcasts</span> everywhere.
+        </h1>
+      </div>
+      <div class="page-text text-main fw-light">
+        <p>
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+      </div>
+      <div class="media-container">
+        <img src="dist/assets/desktop/spotify.svg" alt="Spotify Logo" />
         <img
-          src="dist/assets/desktop/logo.svg"
-          alt="Website Logo"
-          class="logo"
+          src="dist/assets/desktop/apple-podcast.svg"
+          alt="Apple Podcast Logo"
+        />
+        <img
+          src="dist/assets/desktop/google-podcasts.svg"
+          alt="Google Podcast Logo"
+        />
+        <img
+          src="dist/assets/desktop/pocket-casts.svg"
+          alt="Pocket Casts Logo"
         />
       </div>
-      <!-- Main content -->
-      <div class="main-content">
-        <div class="page-title">
-          <h1 class="title fw-light">
-            <span class="text-primary">Publish your podcasts</span> everywhere.
-          </h1>
-        </div>
-        <div class="page-text text-main fw-light">
-          <p>
-            Upload your audio to Pod with a single click. We’ll then distribute
-            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
-            Casts and more!
-          </p>
-        </div>
-        <div class="media-container">
-          <img src="dist/assets/desktop/spotify.svg" alt="Spotify Logo" />
-          <img
-            src="dist/assets/desktop/apple-podcast.svg"
-            alt="Apple Podcast Logo"
+      <div class="email-container">
+        <form id="form">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="bg-blue-dark"
+            id="email"
           />
-          <img
-            src="dist/assets/desktop/google-podcasts.svg"
-            alt="Google Podcast Logo"
-          />
-          <img
-            src="dist/assets/desktop/pocket-casts.svg"
-            alt="Pocket Casts Logo"
-          />
-        </div>
-        <div class="email-container">
-          <form id="form">
-            <input
-              type="text"
-              placeholder="Email Address"
-              class="bg-blue-dark"
-              id="email"
-            />
-            <small class="fw-bold" id="error-message"
-              >Oops! Please check your email</small
-            >
-            <button type="submit" class="bg-primary fw-bold" id="submit-btn">
-              Request Access
-            </button>
-          </form>
-        </div>
+          <small class="fw-bold" id="error-message"
+            >Oops! Please check your email</small
+          >
+          <button type="submit" class="bg-primary fw-bold" id="submit-btn">
+            Request Access
+          </button>
+        </form>
       </div>
     </div>
 
