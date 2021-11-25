@@ -74,6 +74,29 @@
       .email-container {
         grid-column: 1 / 4;
         grid-row: 3 / 4;
+
+        #form {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+
+          input {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            padding: 0.85rem 1.7rem;
+          }
+
+          small {
+            // display: block;
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+          }
+
+          button {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            display: inline-block;
+          }
+        }
       }
     }
   }
