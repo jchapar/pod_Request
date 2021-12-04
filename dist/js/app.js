@@ -1,6 +1,7 @@
 const email = document.getElementById("email");
 const button = document.getElementById("submit-btn");
 const errorMsg = document.getElementById("error-message");
+const mainContent = document.querySelector(".main-content");
 
 // Check email is valid
 function checkEmail(input) {
@@ -22,4 +23,12 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   checkEmail(email);
+});
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth < 400) {
+    mainContent.className = "main-content";
+  } else {
+    mainContent.className = "main-content bg-dark";
+  }
 });
